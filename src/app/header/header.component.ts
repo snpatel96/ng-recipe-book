@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  @Output() selectedView = new EventEmitter<string>();
   title = 'recipe book';
+
+  onSelect(value: string) {
+    this.selectedView.emit(value);
+  }
 }
