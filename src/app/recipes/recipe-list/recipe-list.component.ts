@@ -15,6 +15,11 @@ export class RecipeListComponent {
       'well done pizza',
       'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
     ),
+    new Recipe(
+      'burger',
+      'steal burger',
+      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1899&q=80'
+    ),
   ];
 
   onRecipeSelected(recipe: Recipe) {
